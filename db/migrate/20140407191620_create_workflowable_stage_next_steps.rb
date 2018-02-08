@@ -13,7 +13,7 @@
 #     limitations under the License.
 
 
-class CreateWorkflowableStageNextSteps < ActiveRecord::Migration
+class CreateWorkflowableStageNextSteps < ActiveRecord::Migration[5.1]
   def change
     create_table :workflowable_stage_next_steps do |t|
       t.integer :current_stage_id

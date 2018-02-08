@@ -13,7 +13,7 @@
 #     limitations under the License.
 
 
-class AddPositionToStageAction < ActiveRecord::Migration
+class AddPositionToStageAction < ActiveRecord::Migration[5.1]
   def change
     add_column :workflowable_stage_actions, :position, :integer
   end

@@ -13,7 +13,7 @@
 #     limitations under the License.
 
 
-class CreateWorkflowableActions < ActiveRecord::Migration
+class CreateWorkflowableActions < ActiveRecord::Migration[5.1]
   def change
     create_table :workflowable_actions do |t|
       t.string :name

@@ -13,7 +13,7 @@
 #     limitations under the License.
 
 
-class AddOrderToAction < ActiveRecord::Migration
+class AddOrderToAction < ActiveRecord::Migration[5.1]
   def change
     add_column :workflowable_actions, :position, :integer
   end

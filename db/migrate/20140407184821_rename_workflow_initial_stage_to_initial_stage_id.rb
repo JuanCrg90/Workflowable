@@ -13,7 +13,7 @@
 #     limitations under the License.
 
 
-class RenameWorkflowInitialStageToInitialStageId < ActiveRecord::Migration
+class RenameWorkflowInitialStageToInitialStageId < ActiveRecord::Migration[5.1]
   def change
     rename_column :workflowable_workflows, :initial_stage, :initial_stage_id
   end

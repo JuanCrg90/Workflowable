@@ -13,7 +13,7 @@
 #     limitations under the License.
 
 
-class CreateWorkflowableStages < ActiveRecord::Migration
+class CreateWorkflowableStages < ActiveRecord::Migration[5.1]
   def change
     create_table :workflowable_stages do |t|
       t.string :name
